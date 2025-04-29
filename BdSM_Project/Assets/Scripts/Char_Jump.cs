@@ -1,0 +1,56 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Char_Jump : MonoBehaviour
+{
+
+    private Rigidbody2D _rigidbody2D;
+
+    public Vector2 _desireDirection = Vector2.zero;
+    public float salto = 100;
+    public bool grounded = false;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (grounded)
+        {
+            if (gameObject.layer == 6)
+            {
+                if (Input.GetKeyDown(KeyCode.W))
+                {
+                    _rigidbody2D.AddForce(Vector2.up * salto, ForceMode2D.Impulse);
+                }
+            }
+            else
+            {
+                if (Input.GetKeyDown(KeyCode.I))
+                {
+                    _rigidbody2D.AddForce(Vector2.up * salto, ForceMode2D.Impulse);
+                }
+            }
+        }
+    }
+
+    public void GroundHitCallBack()
+    {
+        grounded = true;
+    }
+
+    public void GroundNoHitCallBack()
+    {
+        grounded = false;
+    }
+
+    private void FixedUpdate()
+    {
+
+    }
+}
