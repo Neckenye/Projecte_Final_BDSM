@@ -8,7 +8,7 @@ public class Char_Movement : MonoBehaviour
     public string _horizontalInputAxisName = "Horizontal";
     public string _verticalInputAxisName = "Vertical";
 
-    public float speed = 10.0f;
+    public float speed = 14.0f;
 
     private Rigidbody2D _rigidbody2D;
 
