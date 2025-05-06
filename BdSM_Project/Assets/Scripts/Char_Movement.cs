@@ -22,11 +22,6 @@ public class Char_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //_desireDirection.x = Input.GetAxis(_horizontalInputAxisName); Esto hace el movimiento normal con WASD o Flechas
-
-        //If es character uno > if key d = derecha, else if key a = izquierda || else if key l = derecha, else if key j = izquierda
-        //6 = Char_1 , 7 = Char_2
-
         if (gameObject.layer == 6)
         {
             if (Input.GetKey(KeyCode.D))
@@ -57,7 +52,6 @@ public class Char_Movement : MonoBehaviour
                 _desireDirection.x = 0;
             }
         }
-        //_desireDirection.y += -0.4f;
         _desireDirection.Normalize();
     }
 
