@@ -67,7 +67,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.2
+  m_Radius: 0.4
 --- !u!114 &2963994175234379069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80,6 +80,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b7d804eb76e3c0469880ed4899832c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundHitEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  groundNoHitEvent:
+    m_PersistentCalls:
+      m_Calls: []
   collidableTags:
   - Suelo
   - Plataforma
