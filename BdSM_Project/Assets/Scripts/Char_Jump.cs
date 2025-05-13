@@ -34,6 +34,7 @@ public class Char_Jump : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.I))
                 {
                     _rigidbody2D.AddForce(Vector2.up * salto, ForceMode2D.Impulse);
+
                 }
             }
         }
