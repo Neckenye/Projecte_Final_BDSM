@@ -8,6 +8,7 @@ TagManager:
   - Suelo
   - Plataforma
   - Checker
+  - Pincho
   layers:
   - Default
   - TransparentFX
