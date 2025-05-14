@@ -6,15 +6,16 @@ public class Projectile : MonoBehaviour
 {
     [SerializeField] private float speed;
     private Rigidbody2D rb;
-    public Vector2 _desireDirection = Vector2.zero;
+    [SerializeField] public Vector2 _desireDirection = Vector2.zero;
+    
     
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        _desireDirection.x = 1;
-        _desireDirection.y = 0;
+        //_desireDirection.x = 0;
+        speed = 8;
         _desireDirection.Normalize();
         LaunchProjectile();
     }

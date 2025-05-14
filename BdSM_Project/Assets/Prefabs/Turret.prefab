@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 979811929584779152}
   - component: {fileID: 7744238003305698073}
-  - component: {fileID: 4605550101843983126}
+  - component: {fileID: -213699082249154283}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Suelo
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4605550101843983126
+--- !u!114 &-213699082249154283
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,6 +94,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 4873514677801930173}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b21cb2e8b3b4d8746b2873860cf8bcd8, type: 3}
+  m_Script: {fileID: 11500000, guid: eed78913dff8319438667670e39dacd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 2029132773257651167, guid: 684b8f5104b1e654580df2bbae6790df, type: 3}
+  timeBetweenShoots: 3
