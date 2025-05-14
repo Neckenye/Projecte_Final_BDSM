@@ -7,13 +7,14 @@ public class Turret_Shoot : MonoBehaviour
 {
     [SerializeField] private GameObject projectilePrefab;
     [SerializeField] private float timeBetweenShoots = 1;
+    [SerializeField] private float ShootAfter;
+    [SerializeField] private float projectileDirection;
     private float timeBetweenShootsCopy;
 
     // Start is called before the first frame update
     void Start()
     {
-        //Instantiate(projectilePrefab, transform.position , Quaternion.identity);
-        timeBetweenShootsCopy = 0;
+        timeBetweenShootsCopy = timeBetweenShoots + ShootAfter;
     }
 
     // Update is called once per frame
@@ -24,8 +25,14 @@ public class Turret_Shoot : MonoBehaviour
         {
             GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
             Projectile component = projectile.GetComponent<Projectile>();
-            component._desireDirection.x = 1;
+            component._desireDirection.x = projectileDirection;
             timeBetweenShootsCopy = timeBetweenShoots;
+
+            //Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+            //Projectile component = projectile.GetComponent<Projectile>();
+            //component._desireDirection.x = 1;
+            //timeBetweenShootsCopy = timeBetweenShoots;
+            //Debug.Log("Spawned projectile");
         }
     }
 }

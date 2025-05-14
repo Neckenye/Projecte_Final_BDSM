@@ -14,7 +14,6 @@ public class Projectile : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        //_desireDirection.x = 0;
         speed = 8;
         _desireDirection.Normalize();
         LaunchProjectile();
@@ -28,12 +27,16 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        if (collision.gameObject.CompareTag("Torreta Mostaza") == false)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void LaunchProjectile()
     {
         Vector2 direction = _desireDirection;
         rb.velocity = direction * speed;
+        Debug.Log("Launching projectile");
     }
 }

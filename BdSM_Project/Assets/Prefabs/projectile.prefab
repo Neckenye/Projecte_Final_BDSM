@@ -172,4 +172,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  _desireDirection: {x: 0, y: 0}
+  _desireDirection: {x: 1, y: 0}
