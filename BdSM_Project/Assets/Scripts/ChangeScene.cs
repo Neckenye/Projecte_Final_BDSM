@@ -21,18 +21,18 @@ public class ChangeScene : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
 
-        thislevel = SceneManager.GetActiveScene().buildIndex;
         isLoading = false;
     }
     public void AdvanceLevel()
-    {        
+    {
+        thislevel = SceneManager.GetActiveScene().buildIndex;
         LoadLevel(1);
         isLoading = false;
-        thislevel = thislevel + 1;
     }
 
     public void ResetLevel()
     {
+        thislevel = SceneManager.GetActiveScene().buildIndex;
         LoadLevel(0);
         isLoading = false;
     }
