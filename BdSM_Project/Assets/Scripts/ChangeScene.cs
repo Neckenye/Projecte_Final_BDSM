@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
-    public int thislevel;
     public bool isLoading = false;
     public static ChangeScene instance {  get; private set; }
 
@@ -21,29 +20,27 @@ public class ChangeScene : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
 
-        thislevel = SceneManager.GetActiveScene().buildIndex;
         isLoading = false;
     }
     public void AdvanceLevel()
-    {        
+    {
         LoadLevel(1);
-        isLoading = false;
-        thislevel = thislevel + 1;
     }
 
     public void ResetLevel()
     {
         LoadLevel(0);
-        isLoading = false;
     }
 
     private void LoadLevel(int levelIncrease)
     {
         if (!isLoading)
         {
-            SceneManager.LoadScene(thislevel + levelIncrease);
+            int thislevel = SceneManager.GetActiveScene().buildIndex;
             isLoading = true;
+            SceneManager.LoadScene(thislevel + levelIncrease);
         }
+        isLoading = false;
     }
     public void ExitGame()
     {
