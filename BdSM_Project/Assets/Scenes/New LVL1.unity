@@ -143,6 +143,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 572596146511614947, guid: 5e8e67e662cdd5a45a69d9f06409f79d, type: 3}
+      propertyPath: m_Size.y
+      value: 1.9
+      objectReference: {fileID: 0}
     - target: {fileID: 3120050241486008698, guid: 5e8e67e662cdd5a45a69d9f06409f79d, type: 3}
       propertyPath: salto
       value: 23
@@ -231,9 +235,10 @@ GameObject:
   - component: {fileID: 56276876}
   - component: {fileID: 56276875}
   - component: {fileID: 56276874}
+  - component: {fileID: 56276877}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: Suelo
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -256,7 +261,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.930647, g: 0.96981126, b: 0.6861872, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -275,7 +280,7 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
+    width: 2.85
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
@@ -306,12 +311,26 @@ Transform:
   m_GameObject: {fileID: 56276873}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.15, z: -10}
+  m_LocalPosition: {x: 0, y: 0.75, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &56276877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56276873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dadfc08515436848b427828eb772344, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followObject: {fileID: 1587090467}
+  followOffset: {x: 50, y: 50}
 --- !u!1 &668584641
 GameObject:
   m_ObjectHideFlags: 0
@@ -2774,6 +2793,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1587090467 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4664445579972517122, guid: 2d92553bb1d665e4bb1e2cb63ad6975b, type: 3}
+  m_PrefabInstance: {fileID: 1648927338}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1648927338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2857,6 +2881,10 @@ PrefabInstance:
     - target: {fileID: 6547639979385259256, guid: 2d92553bb1d665e4bb1e2cb63ad6975b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7651265155946436838, guid: 2d92553bb1d665e4bb1e2cb63ad6975b, type: 3}
+      propertyPath: m_Size.y
+      value: 1.9
       objectReference: {fileID: 0}
     - target: {fileID: 7682912702743548895, guid: 2d92553bb1d665e4bb1e2cb63ad6975b, type: 3}
       propertyPath: velocityMov
