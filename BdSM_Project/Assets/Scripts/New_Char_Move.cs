@@ -58,16 +58,6 @@ public class New_Char_Move : MonoBehaviour
                 horizontalMov = 0 * velocityMov;
             }
         }
-        if (horizontalMov >= 1)
-        {
-       
-            gameObject.transform.localScale = new Vector3(-characterSize, characterSize, characterSize);
-        }
-        else if (horizontalMov <= -1)
-        {
-            gameObject.transform.localScale = new Vector3(characterSize, characterSize, characterSize);
-        }
-        
     }
 
     private void FixedUpdate()
