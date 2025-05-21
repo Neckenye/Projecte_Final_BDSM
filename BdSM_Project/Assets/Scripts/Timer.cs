@@ -5,15 +5,20 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public Slider slider;
+    public Slider sliderOne;
+    public Slider sliderTwo;
     public float myTime;
     public bool stopTime;
 
     void Start()
     {
         stopTime = false;
-        slider.maxValue = myTime;
-        slider.value = myTime;
+
+        sliderOne.maxValue = myTime;
+        sliderOne.value = myTime;
+
+        sliderTwo.maxValue = myTime;
+        sliderTwo.value = myTime;
     }
 
     // Update is called once per frame
@@ -28,7 +33,8 @@ public class Timer : MonoBehaviour
 
         if (stopTime == false )
         {
-            slider.value = currentTime;
+            sliderOne.value = currentTime;
+            sliderTwo.value = currentTime;
         }
         
     }
