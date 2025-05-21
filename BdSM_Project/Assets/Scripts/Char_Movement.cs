@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.PackageManager;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Char_Movement : MonoBehaviour
 {
@@ -54,6 +55,7 @@ public class Char_Movement : MonoBehaviour
             }
         }
         _desireDirection.Normalize();
+        
     }
 
     private void FixedUpdate()

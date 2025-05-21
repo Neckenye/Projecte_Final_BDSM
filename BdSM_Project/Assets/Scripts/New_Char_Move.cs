@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class New_Char_Move : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class New_Char_Move : MonoBehaviour
     [SerializeField] private float velocityMov;
     [Range(0f, 1f)][SerializeField] private float softMov;    //Suavizado de movimineto
     private Vector3 velocity = Vector3.zero;
-    private bool lookingRight = true;
+    [SerializeField] private float characterSize;
 
 
 
@@ -28,10 +29,12 @@ public class New_Char_Move : MonoBehaviour
             if (Input.GetKey(KeyCode.D))
             {
                 horizontalMov = 1 * velocityMov;
+                
             }
             else if (Input.GetKey(KeyCode.A))
             {
                 horizontalMov = -1 * velocityMov;
+               
             }
             else
             {
@@ -43,16 +46,28 @@ public class New_Char_Move : MonoBehaviour
             if (Input.GetKey(KeyCode.L))
             {
                 horizontalMov = 1 * velocityMov;
+                
             }
             else if (Input.GetKey(KeyCode.J))
             {
                 horizontalMov = -1 * velocityMov;
+                
             }
             else
             {
                 horizontalMov = 0 * velocityMov;
             }
-        }       
+        }
+        if (horizontalMov >= 1)
+        {
+       
+            gameObject.transform.localScale = new Vector3(-characterSize, characterSize, characterSize);
+        }
+        else if (horizontalMov <= -1)
+        {
+            gameObject.transform.localScale = new Vector3(characterSize, characterSize, characterSize);
+        }
+        
     }
 
     private void FixedUpdate()
@@ -75,13 +90,7 @@ public class New_Char_Move : MonoBehaviour
         //}
     }
 
-    //private void Turn()
-    //{
-    //    lookingRight = !lookingRight;
-    //    Vector3 scale = transform.localScale;
-    //    scale.x *= -1;
-    //    transform.localScale = scale;
-    //}
+    
 
 }
 
