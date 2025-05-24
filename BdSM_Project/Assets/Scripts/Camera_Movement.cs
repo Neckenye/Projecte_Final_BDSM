@@ -7,6 +7,7 @@ public class Camera_Movement : MonoBehaviour
 {
     public GameObject followObject;
     public Vector2 followOffset;
+    [SerializeField] public float speed;
     private Vector2 threshold;
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,7 @@ public class Camera_Movement : MonoBehaviour
         {
             newPosition.y = follow.y;
         }
-        transform.position = newPosition; 
+        transform.position = Vector3.MoveTowards(transform.position, newPosition, speed * Time.deltaTime); 
 
     }
 
@@ -48,6 +49,5 @@ public class Camera_Movement : MonoBehaviour
         Gizmos.color = Color.blue;
         Vector2 border = CalculateTreshold();
         Gizmos.DrawWireCube(transform.position, new Vector3(border.x * 2, border.y * 2, 1));
-
     }
 }
