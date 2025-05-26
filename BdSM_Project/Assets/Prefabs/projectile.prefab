@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 4899150088004348188}
   - component: {fileID: 5151318905943233610}
   m_Layer: 0
-  m_Name: projectile
-  m_TagString: Pincho
+  m_Name: Projectile
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

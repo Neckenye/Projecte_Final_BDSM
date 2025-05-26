@@ -126,7 +126,6 @@ GameObject:
   - component: {fileID: 7651265155946436838}
   - component: {fileID: 5844652078228218193}
   - component: {fileID: 7682912702743548895}
-  - component: {fileID: 5922435436846055662}
   - component: {fileID: 8127779151924956018}
   - component: {fileID: 6919088649567403684}
   - component: {fileID: 6513489561857138583}
@@ -238,8 +237,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
+  m_Offset: {x: 0, y: -0.26}
+  m_Size: {x: 0.7, y: 1.42}
   m_Direction: 0
 --- !u!50 &5844652078228218193
 Rigidbody2D:
@@ -282,22 +281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocityMov: 750
   softMov: 0.2
---- !u!114 &5922435436846055662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4664445579972517122}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b22fc35da5bba0046837e2a97fb41d09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _horizontalInputAxisName: Horizontal
-  _verticalInputAxisName: Vertical
-  speed: 1
-  _desireDirection: {x: 0, y: 0}
+  characterSize: 0
 --- !u!114 &8127779151924956018
 MonoBehaviour:
   m_ObjectHideFlags: 0

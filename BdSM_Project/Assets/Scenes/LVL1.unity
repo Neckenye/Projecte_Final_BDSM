@@ -137,7 +137,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 318471626319690324, guid: 5e8e67e662cdd5a45a69d9f06409f79d, type: 3}
       propertyPath: m_Name
-      value: Character_2
+      value: Character2
       objectReference: {fileID: 0}
     - target: {fileID: 318471626319690324, guid: 5e8e67e662cdd5a45a69d9f06409f79d, type: 3}
       propertyPath: m_TagString
@@ -231,7 +231,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6146578655577834489, guid: 5e8e67e662cdd5a45a69d9f06409f79d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -248,8 +249,9 @@ GameObject:
   - component: {fileID: 56276875}
   - component: {fileID: 56276874}
   - component: {fileID: 56276877}
+  - component: {fileID: 56276878}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: MainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -322,7 +324,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 56276873}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -340,13 +342,21 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 56276873}
+  m_CullTransparentMesh: 1
+--- !u!114 &56276878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56276873}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3dadfc08515436848b427828eb772344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   followObject: {fileID: 1814099498}
-  followOffset: {x: 0, y: 3}
+  followOffset: {x: 0, y: 4}
   speed: 10
 --- !u!1 &668584641
 GameObject:
@@ -501,7 +511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7079841884738963684, guid: aa1cdb99004c63d44b84b63178c520c3, type: 3}
       propertyPath: m_Name
-      value: CTRL_Scenes
+      value: CTRLScenes
       objectReference: {fileID: 0}
     - target: {fileID: 8803521408215320794, guid: aa1cdb99004c63d44b84b63178c520c3, type: 3}
       propertyPath: isLoading
@@ -8145,7 +8155,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4664445579972517122, guid: 2d92553bb1d665e4bb1e2cb63ad6975b, type: 3}
       propertyPath: m_Name
-      value: Character_1
+      value: Character1
       objectReference: {fileID: 0}
     - target: {fileID: 4664445579972517122, guid: 2d92553bb1d665e4bb1e2cb63ad6975b, type: 3}
       propertyPath: m_TagString
@@ -8217,6 +8227,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6547639979385259256, guid: 2d92553bb1d665e4bb1e2cb63ad6975b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6547639979385259256, guid: 2d92553bb1d665e4bb1e2cb63ad6975b, type: 3}
+      propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7651265155946436838, guid: 2d92553bb1d665e4bb1e2cb63ad6975b, type: 3}

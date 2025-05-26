@@ -12,6 +12,7 @@ public class New_Char_Move : MonoBehaviour
     [Range(0f, 1f)][SerializeField] private float softMov;    //Suavizado de movimineto
     private Vector3 velocity = Vector3.zero;
     [SerializeField] private float characterSize;
+    private bool lookingRight = true;
 
 
 

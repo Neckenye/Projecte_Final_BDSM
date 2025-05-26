@@ -13,10 +13,10 @@ GameObject:
   - component: {fileID: 572596146511614947}
   - component: {fileID: 7821713657070605964}
   - component: {fileID: -3601421542194552299}
-  - component: {fileID: 6146578655577834489}
   - component: {fileID: 3120050241486008698}
   - component: {fileID: 647670256327122577}
   - component: {fileID: 7244516039288745373}
+  - component: {fileID: -4941537593003195313}
   m_Layer: 7
   m_Name: Character_2
   m_TagString: Character
@@ -124,8 +124,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
+  m_Offset: {x: 0, y: -0.26}
+  m_Size: {x: 0.7, y: 1.42}
   m_Direction: 0
 --- !u!50 &7821713657070605964
 Rigidbody2D:
@@ -168,22 +168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocityMov: 750
   softMov: 0.2
---- !u!114 &6146578655577834489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 318471626319690324}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b22fc35da5bba0046837e2a97fb41d09, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _horizontalInputAxisName: Horizontal
-  _verticalInputAxisName: Vertical
-  speed: 1
-  _desireDirection: {x: 0, y: 0}
+  characterSize: 0
 --- !u!114 &3120050241486008698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,6 +239,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1211d1ea12dea104a9f0702abd0e5dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-4941537593003195313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318471626319690324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cc351625c6daf4fa58df3198205296, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5192913904545928606
