@@ -5,12 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Character
-  - Suelo
-  - Plataforma
   - Checker
   - Pincho
-  - Torreta Mostaza
-  - Torreta Ketchup
+  - MustardTurret
+  - KetchupTurret
+  - Floor
+  - Spike
   layers:
   - Default
   - TransparentFX
@@ -20,7 +20,7 @@ TagManager:
   - UI
   - Char_1
   - Char_2
-  - 
+  - Turrets
   - 
   - 
   - 

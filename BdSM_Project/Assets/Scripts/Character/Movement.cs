@@ -12,6 +12,7 @@ public class New_Char_Move : MonoBehaviour
     [Range(0f, 1f)][SerializeField] private float softMov;    //Suavizado de movimineto
     private Vector3 velocity = Vector3.zero;
     [SerializeField] private float characterSize;
+    private bool lookingRight = true;
 
 
 
@@ -70,17 +71,23 @@ public class New_Char_Move : MonoBehaviour
         Vector3 velocidadObjetivo = new Vector2(move, rb.velocity.y);
         rb.velocity = Vector3.SmoothDamp(rb.velocity, velocidadObjetivo, ref velocity, softMov);
 
-        //if (move < 0 && !lookingRight)
-        //{
-        //    Turn();
-        //}
-        //else if (move > 0 && lookingRight)
-        //{
-        //    Turn();
-        //}
+        if (move < 0 && !lookingRight)
+        {
+            Turn();
+        }
+        else if (move > 0 && lookingRight)
+        {
+            Turn();
+        }
     }
 
-    
+    private void Turn()
+    {
+        lookingRight = !lookingRight;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
+    }
 
 }
 

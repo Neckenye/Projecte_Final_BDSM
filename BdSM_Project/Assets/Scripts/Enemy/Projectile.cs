@@ -27,7 +27,7 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Torreta Mostaza") == false)
+        if (collision.gameObject.CompareTag("MustardTurret") == false)
         {
             Destroy(gameObject);
         }
@@ -37,6 +37,5 @@ public class Projectile : MonoBehaviour
     {
         Vector2 direction = _desireDirection;
         rb.velocity = direction * speed;
-        Debug.Log("Launching projectile");
     }
 }
