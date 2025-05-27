@@ -9240,7 +9240,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sliderOne: {fileID: 2212764798109428494}
   sliderTwo: {fileID: 5070220045953425535}
-  myTime: 30
+  myTime: 5
   stopTime: 0
 --- !u!224 &8085495734813426980
 RectTransform:
