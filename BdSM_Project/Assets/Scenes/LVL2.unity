@@ -7106,7 +7106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sliderOne: {fileID: 554529136849534177}
   sliderTwo: {fileID: 6870890867592689552}
-  myTime: 30
+  initialTime: 20
   stopTime: 0
 --- !u!222 &6569183073737500613
 CanvasRenderer:
