@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 2201594603565644471}
   - component: {fileID: 1044506544981520374}
   - component: {fileID: 4890477729224486847}
+  - component: {fileID: 6907752340759887637}
   m_Layer: 0
   m_Name: MustardTurret
-  m_TagString: Torreta Mostaza
+  m_TagString: MustardTurret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,3 +131,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6907752340759887637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5695824962710014211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eed78913dff8319438667670e39dacd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 2029132773257651167, guid: 684b8f5104b1e654580df2bbae6790df, type: 3}
+  timeBetweenShoots: 1
+  ShootAfter: 0
+  projectileDirection: 1
