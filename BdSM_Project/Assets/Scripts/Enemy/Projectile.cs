@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] private float speed;
+    [SerializeField] private float speed = 8;
     private Rigidbody2D rb;
-    [SerializeField] public Vector2 _desireDirection = Vector2.zero;
-    
-    
+    [SerializeField] public Vector2 _desireDirection;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        speed = 8;
         _desireDirection.Normalize();
         LaunchProjectile();
     }
