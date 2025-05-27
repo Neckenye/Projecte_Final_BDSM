@@ -356,7 +356,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8242739754859391544, guid: e7d68ead7604406419d63574ea72a336, type: 3}
       propertyPath: m_Size.y
-      value: 1.130908
+      value: 1.0614748
       objectReference: {fileID: 0}
     - target: {fileID: 8242739754859391544, guid: e7d68ead7604406419d63574ea72a336, type: 3}
       propertyPath: m_Offset.x
@@ -364,7 +364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8242739754859391544, guid: e7d68ead7604406419d63574ea72a336, type: 3}
       propertyPath: m_Offset.y
-      value: 1.4496017
+      value: 1.414885
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -1223,7 +1223,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8242739754859391544, guid: e7d68ead7604406419d63574ea72a336, type: 3}
       propertyPath: m_Size.y
-      value: 1.0894785
+      value: 1.0200443
       objectReference: {fileID: 0}
     - target: {fileID: 8242739754859391544, guid: e7d68ead7604406419d63574ea72a336, type: 3}
       propertyPath: m_Offset.x
@@ -1231,7 +1231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8242739754859391544, guid: e7d68ead7604406419d63574ea72a336, type: 3}
       propertyPath: m_Offset.y
-      value: 1.4288869
+      value: 1.3941698
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -11761,7 +11761,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8242739754859391544, guid: e7d68ead7604406419d63574ea72a336, type: 3}
       propertyPath: m_Size.y
-      value: 1.0998363
+      value: 1.0165167
       objectReference: {fileID: 0}
     - target: {fileID: 8242739754859391544, guid: e7d68ead7604406419d63574ea72a336, type: 3}
       propertyPath: m_Offset.x
@@ -11769,7 +11769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8242739754859391544, guid: e7d68ead7604406419d63574ea72a336, type: 3}
       propertyPath: m_Offset.y
-      value: 1.4340658
+      value: 1.392406
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -12360,7 +12360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8242739754859391544, guid: e7d68ead7604406419d63574ea72a336, type: 3}
       propertyPath: m_Size.y
-      value: 1.1205502
+      value: 1.0372295
       objectReference: {fileID: 0}
     - target: {fileID: 8242739754859391544, guid: e7d68ead7604406419d63574ea72a336, type: 3}
       propertyPath: m_Offset.x
@@ -12368,7 +12368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8242739754859391544, guid: e7d68ead7604406419d63574ea72a336, type: 3}
       propertyPath: m_Offset.y
-      value: 1.4444227
+      value: 1.4027624
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -13269,7 +13269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sliderOne: {fileID: 3057453853680287146}
   sliderTwo: {fileID: 8252311457481389787}
-  myTime: 30
+  initialTime: 30
   stopTime: 0
 --- !u!1 &6232579194849572882
 GameObject:
