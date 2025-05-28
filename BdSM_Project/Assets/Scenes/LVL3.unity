@@ -472,22 +472,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 843308557}
     m_Modifications:
-    - target: {fileID: 560716100749929159, guid: 434a89441742c0d4b94adb7943f1dd18, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 180218978, guid: 6bf1db7af81151348b2c16276e6f9ff4, type: 3}
-    - target: {fileID: 560716100749929159, guid: 434a89441742c0d4b94adb7943f1dd18, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 560716100749929159, guid: 434a89441742c0d4b94adb7943f1dd18, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 560716100749929159, guid: 434a89441742c0d4b94adb7943f1dd18, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 425366973609066204, guid: ba415424bf40a744bbdcde7f676b167b, type: 3}
       propertyPath: m_LocalScale.x
       value: -1
@@ -543,6 +527,22 @@ PrefabInstance:
     - target: {fileID: 3448964171699677878, guid: ba415424bf40a744bbdcde7f676b167b, type: 3}
       propertyPath: m_TagString
       value: KetchupTurret
+      objectReference: {fileID: 0}
+    - target: {fileID: 560716100749929159, guid: 434a89441742c0d4b94adb7943f1dd18, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 180218978, guid: 6bf1db7af81151348b2c16276e6f9ff4, type: 3}
+    - target: {fileID: 560716100749929159, guid: 434a89441742c0d4b94adb7943f1dd18, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 560716100749929159, guid: 434a89441742c0d4b94adb7943f1dd18, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 560716100749929159, guid: 434a89441742c0d4b94adb7943f1dd18, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -673,22 +673,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 843308557}
     m_Modifications:
-    - target: {fileID: 560716100749929159, guid: 434a89441742c0d4b94adb7943f1dd18, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 180218978, guid: 6bf1db7af81151348b2c16276e6f9ff4, type: 3}
-    - target: {fileID: 560716100749929159, guid: 434a89441742c0d4b94adb7943f1dd18, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 560716100749929159, guid: 434a89441742c0d4b94adb7943f1dd18, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 560716100749929159, guid: 434a89441742c0d4b94adb7943f1dd18, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 425366973609066204, guid: ba415424bf40a744bbdcde7f676b167b, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -744,6 +728,22 @@ PrefabInstance:
     - target: {fileID: 3448964171699677878, guid: ba415424bf40a744bbdcde7f676b167b, type: 3}
       propertyPath: m_TagString
       value: KetchupTurret
+      objectReference: {fileID: 0}
+    - target: {fileID: 560716100749929159, guid: 434a89441742c0d4b94adb7943f1dd18, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 180218978, guid: 6bf1db7af81151348b2c16276e6f9ff4, type: 3}
+    - target: {fileID: 560716100749929159, guid: 434a89441742c0d4b94adb7943f1dd18, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 560716100749929159, guid: 434a89441742c0d4b94adb7943f1dd18, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 560716100749929159, guid: 434a89441742c0d4b94adb7943f1dd18, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12873,40 +12873,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2592033172764330271}
   m_CullTransparentMesh: 1
---- !u!114 &3749785227456347354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6232579194849572882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 21
-    m_FontStyle: 1
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: EXIT GAME
 --- !u!1 &3866503436131155533
 GameObject:
   m_ObjectHideFlags: 0
@@ -13118,8 +13084,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: b43b178f1d3fb8641a0f3d360ad7b229, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -13287,24 +13253,6 @@ MonoBehaviour:
   sliderTwo: {fileID: 8252311457481389787}
   initialTime: 30
   stopTime: 0
---- !u!1 &6232579194849572882
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8223775501527199738}
-  - component: {fileID: 7750684808679025053}
-  - component: {fileID: 3749785227456347354}
-  m_Layer: 5
-  m_Name: txt
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!224 &6325273078713259014
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13448,14 +13396,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 87.08518}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8223775501527199738}
+  m_Children: []
   m_Father: {fileID: 4967013270007550848}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -100, y: -100}
-  m_SizeDelta: {x: 90, y: 70}
+  m_AnchoredPosition: {x: -130, y: -80}
+  m_SizeDelta: {x: 90, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &7344027834812483254
 RectTransform:
@@ -13499,14 +13446,6 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 0
---- !u!222 &7750684808679025053
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6232579194849572882}
-  m_CullTransparentMesh: 1
 --- !u!114 &7867767366690244632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13574,25 +13513,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &8223775501527199738
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6232579194849572882}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7256122763563833313}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8252311457481389787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13682,10 +13602,10 @@ SceneRoots:
   - {fileID: 843308557}
   - {fileID: 745770433}
   - {fileID: 84757057}
-  - {fileID: 1524191717924380270}
   - {fileID: 1937898107995841995}
   - {fileID: 1144025604}
   - {fileID: 765806278}
   - {fileID: 2082145413}
   - {fileID: 133713398}
   - {fileID: 1041144430}
+  - {fileID: 1524191717924380270}
