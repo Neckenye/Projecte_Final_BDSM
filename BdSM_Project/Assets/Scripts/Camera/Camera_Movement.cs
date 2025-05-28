@@ -27,7 +27,7 @@ public class Camera_Movement : MonoBehaviour
         //{
         //    newPosition.x = follow.x;
         //}
-        Debug.Log(yDifference);
+        //Debug.Log(yDifference);
         if (Mathf.Abs(yDifference) >= threshold.y)
         {
             newPosition.y = follow.y;
