@@ -16,7 +16,10 @@ EditorBuildSettings:
     guid: cb064bf0170fc8e47b9ec582290d450c
   - enabled: 1
     path: Assets/Scenes/LVL3.unity
-    guid: 95e4e1680ab6f3948943241682d79cf4
+    guid: 7f6b2bdd33aa64f4f891944b8bd2d077
+  - enabled: 1
+    path: Assets/Scenes/LVL4.unity
+    guid: 5b925df97a6a2ff43b0a9cf5ea152bdf
   - enabled: 1
     path: Assets/Scenes/FinishScreen.unity
     guid: de3721121ecbc134faa590ee02a0442d
