@@ -12816,7 +12816,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sliderOne: {fileID: 3057453853680287146}
   sliderTwo: {fileID: 8252311457481389787}
-  myTime: 30
+  initialTime: 30
   stopTime: 0
 --- !u!1 &6232579194849572882
 GameObject:
