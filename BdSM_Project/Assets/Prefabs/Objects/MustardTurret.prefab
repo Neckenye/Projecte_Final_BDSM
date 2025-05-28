@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2201594603565644471}
   - component: {fileID: 1044506544981520374}
   - component: {fileID: 4890477729224486847}
-  - component: {fileID: 6907752340759887637}
+  - component: {fileID: 702852599716628382}
   m_Layer: 0
   m_Name: MustardTurret
   m_TagString: MustardTurret
@@ -131,7 +131,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6907752340759887637
+--- !u!114 &702852599716628382
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,4 +146,5 @@ MonoBehaviour:
   projectilePrefab: {fileID: 2029132773257651167, guid: 684b8f5104b1e654580df2bbae6790df, type: 3}
   timeBetweenShoots: 1
   ShootAfter: 0
-  projectileDirection: 1
+  projectileDirectionX: 0
+  projectileDirectionY: 0

@@ -11,6 +11,11 @@ public class Timer : MonoBehaviour
     public float initialTime;
     public bool stopTime;
 
+    private void Awake()
+    {
+        Debug.Assert(initialTime > 0, "initalTime must be greater than 0!");
+    }
+
     void Start()
     {
         myTime = initialTime;

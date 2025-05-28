@@ -111,8 +111,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   collidableTags:
-  - Suelo
-  - Plataforma
+  - Floor
 --- !u!1 &4664445579972517122
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,7 +126,6 @@ GameObject:
   - component: {fileID: 5844652078228218193}
   - component: {fileID: 7682912702743548895}
   - component: {fileID: 8127779151924956018}
-  - component: {fileID: 6919088649567403684}
   - component: {fileID: 6513489561857138583}
   - component: {fileID: -1671082769497969058}
   m_Layer: 6
@@ -297,51 +295,6 @@ MonoBehaviour:
   _desireDirection: {x: 0, y: 0}
   salto: 23
   grounded: 1
---- !u!114 &6919088649567403684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4664445579972517122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b7d804eb76e3c0469880ed4899832c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  groundHitEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8127779151924956018}
-        m_TargetAssemblyTypeName: Char_Jump, Assembly-CSharp
-        m_MethodName: GroundHitCallBack
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  groundNoHitEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 8127779151924956018}
-        m_TargetAssemblyTypeName: Char_Jump, Assembly-CSharp
-        m_MethodName: GroundNoHitCallBack
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  collidableTags:
-  - Suelo
-  - Plataforma
 --- !u!114 &6513489561857138583
 MonoBehaviour:
   m_ObjectHideFlags: 0
