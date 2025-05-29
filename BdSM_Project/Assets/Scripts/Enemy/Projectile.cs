@@ -24,7 +24,7 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("MustardTurret") == false)
+        if (collision.gameObject.CompareTag("MustardTurret") == false && collision.gameObject.CompareTag("Spike") == false)
         {
             Destroy(gameObject);
         }
