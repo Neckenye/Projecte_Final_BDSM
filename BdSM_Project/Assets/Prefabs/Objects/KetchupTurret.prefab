@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 425366973609066204}
   - component: {fileID: 560716100749929159}
+  - component: {fileID: 7775613776992677938}
   m_Layer: 0
   m_Name: KetchupTurret
   m_TagString: Torreta Ketchup
@@ -84,3 +85,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7775613776992677938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3448964171699677878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b4b7ef5236315458d7c79d728eb145, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserPrefab: {fileID: 0}
+  timeBetweenShoots: 1
+  timeShooting: 2
+  ShootAfter: 0
+  projectileDirectionX: 0
+  projectileDirectionY: 0
