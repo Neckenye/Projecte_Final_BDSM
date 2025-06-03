@@ -14,8 +14,6 @@ public class New_Char_Move : MonoBehaviour
     [SerializeField] private float characterSize;
     private bool lookingRight = true;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +23,7 @@ public class New_Char_Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.layer == 6)
+        if (gameObject.CompareTag("Character"))
         {
             if (Input.GetKey(KeyCode.D))
             {
@@ -60,7 +58,6 @@ public class New_Char_Move : MonoBehaviour
             }
         }
     }
-
     private void FixedUpdate()
     {
         Move(horizontalMov * Time.fixedDeltaTime);

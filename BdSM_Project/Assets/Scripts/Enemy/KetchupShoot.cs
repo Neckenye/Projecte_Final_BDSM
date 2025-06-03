@@ -18,11 +18,8 @@ public class KetchupShoot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         timeBetweenShootsCopy = timeBetweenShoots + ShootAfter;
         timeShootingCopy = timeShooting;
-
-
     }
 
     void Update()
@@ -42,5 +39,4 @@ public class KetchupShoot : MonoBehaviour
             timeShootingCopy = timeShooting;
         }
     }
-
 }
