@@ -31,12 +31,6 @@ public class Turret_Shoot : MonoBehaviour
                 component._desireDirection.y = projectileDirectionY;
                 component._desireDirection.x = projectileDirectionX;
                 timeBetweenShootsCopy = timeBetweenShoots;
-
-                //Instantiate(projectilePrefab, transform.position, Quaternion.identity);
-                //Projectile component = projectile.GetComponent<Projectile>();
-                //component._desireDirection.x = 1;
-                //timeBetweenShootsCopy = timeBetweenShoots;
-                //Debug.Log("Spawned projectile");
             }
         }
     }
