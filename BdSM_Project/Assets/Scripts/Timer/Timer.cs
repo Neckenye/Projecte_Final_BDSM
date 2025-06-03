@@ -10,6 +10,7 @@ public class Timer : MonoBehaviour
     private float myTime;
     public float initialTime;
     public bool stopTime;
+    public static bool startTime;
 
     private void Awake()
     {
@@ -18,6 +19,8 @@ public class Timer : MonoBehaviour
 
     void Start()
     {
+        startTime = false;
+
         myTime = initialTime;
 
         sliderOne.maxValue = initialTime;
@@ -31,25 +34,34 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (myTime <= 0)
+        if (Input.anyKeyDown)
         {
-            ChangeScene.instance.ResetLevel();
-            stopTime = true ;
-            
+            if (!Input.GetKeyDown(KeyCode.Tab))
+            {
+                startTime = true;
+            }
         }
 
-        if (Input.GetKey(KeyCode.D)||Input.GetKey(KeyCode.J)) 
+        if (startTime)
         {
-            stopTime = false;
-        }
+            if (myTime <= 0)
+            {
+                ChangeScene.instance.ResetLevel();
+                stopTime = true;
 
-        if (stopTime == false )
-        {
-            myTime = myTime - Time.deltaTime;
-            sliderOne.value = myTime;
-            sliderTwo.value = myTime;
+            }
+
+            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.J))
+            {
+                stopTime = false;
+            }
+
+            if (stopTime == false)
+            {
+                myTime = myTime - Time.deltaTime;
+                sliderOne.value = myTime;
+                sliderTwo.value = myTime;
+            }
         }
-        
     }
 }
