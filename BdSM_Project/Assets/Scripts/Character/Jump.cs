@@ -43,12 +43,14 @@ public class Char_Jump : MonoBehaviour
     //The grounded bool is true if the event is the Ground Hit.
     public void GroundHitCallBack()
     {
+        Debug.Log($"{gameObject.name} changed state: grounded");
         grounded = true;
     }
 
     //The grounded bool is false if the event is the Ground NO Hit.
     public void GroundNoHitCallBack()
     {
+        Debug.Log($"{gameObject.name} changed state: airborne");
         grounded = false;
     }
 
