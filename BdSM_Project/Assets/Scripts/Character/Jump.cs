@@ -22,7 +22,7 @@ public class Char_Jump : MonoBehaviour
     {
         if (grounded)
         {
-            if (gameObject.layer == 6)
+            if (gameObject.CompareTag("Character"))
             {
                 if (Input.GetKeyDown(KeyCode.W))
                 {

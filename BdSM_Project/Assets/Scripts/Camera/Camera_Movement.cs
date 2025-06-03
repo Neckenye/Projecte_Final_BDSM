@@ -19,15 +19,10 @@ public class Camera_Movement : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 follow = followObject.transform.position;
-        //float xDifference = Vector2.Distance(Vector2.right * transform.position.x, Vector2.right * follow.x);
         float yDifference = Vector2.Distance(Vector2.up * transform.position.y, Vector2.up * follow.y);
 
         Vector3 newPosition = transform.position;
-        //if(Mathf.Abs(xDifference) >= threshold.x)
-        //{
-        //    newPosition.x = follow.x;
-        //}
-        //Debug.Log(yDifference);
+        
         if (Mathf.Abs(yDifference) >= threshold.y)
         {
             newPosition.y = follow.y;
