@@ -45,6 +45,15 @@ public class Structures : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
+        //if (collision.gameObject.layer == 6)
+        //{
+        //    collision.transform.SetParent(transform);
+        //}
+        //if (collision.gameObject.layer == 7)
+        //{
+        //    collision.transform.SetParent(transform);
+        //}
+
         if (collision.gameObject.CompareTag("Character"))
         {
             collision.transform.SetParent(transform);
@@ -52,10 +61,20 @@ public class Structures : MonoBehaviour
     }
 
     public void OnCollisionExit2D(Collision2D collision)
-    { 
+    {
+        //if (collision.gameObject.layer == 6)
+        //{
+        //    collision.transform.SetParent(null);
+        //}
+        //if (collision.gameObject.layer == 7)
+        //{
+        //    collision.transform.SetParent(null);
+        //}
+
         if (collision.gameObject.CompareTag("Character"))
         {
             collision.transform.SetParent(null);
         }
+
     }
 }
