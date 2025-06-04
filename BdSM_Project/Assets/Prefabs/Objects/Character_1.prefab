@@ -294,7 +294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _desireDirection: {x: 0, y: 0}
-  salto: 10
+  salto: 23
   grounded: 1
   shouldJump: 0
 --- !u!114 &6513489561857138583

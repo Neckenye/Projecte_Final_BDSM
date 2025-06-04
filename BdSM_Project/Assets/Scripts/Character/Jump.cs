@@ -18,29 +18,6 @@ public class Char_Jump : MonoBehaviour
         _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
     }
 
-    //// Update is called once per frame
-    //void Update()
-    //{
-    //    if (grounded)
-    //    {
-    //        if (gameObject.CompareTag("Character"))
-    //        {
-    //            if (Input.GetKeyDown(KeyCode.W))
-    //            {
-    //                _rigidbody2D.AddForce(Vector2.up * salto, ForceMode2D.Impulse);
-    //            }
-    //        }
-    //        else
-    //        {
-    //            if (Input.GetKeyDown(KeyCode.I))
-    //            {
-    //                _rigidbody2D.AddForce(Vector2.up * salto, ForceMode2D.Impulse);
-
-    //            }
-    //        }
-    //    }
-    //}
-
     //The grounded bool is true if the event is the Ground Hit.
     public void GroundHitCallBack()
     {
@@ -60,7 +37,7 @@ public class Char_Jump : MonoBehaviour
         if (shouldJump && grounded)
         {
             _rigidbody2D.AddForce(Vector2.up * salto, ForceMode2D.Impulse);
-            shouldJump = false;
         }
+        shouldJump = false;
     }
 }

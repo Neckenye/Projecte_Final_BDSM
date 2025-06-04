@@ -51,12 +51,12 @@ public class New_Char_Move : MonoBehaviour
                 horizontalMov = 0 * velocityMov;
             }
 
-            if (Input.GetKey(KeyCode.W))
+            if (Input.GetKeyDown(KeyCode.W))
             {
                 jumpComponent.shouldJump = true;
             }
         }
-        else
+        if (selectedSchema == InputSchema.IJKL)
         {
             if (Input.GetKey(KeyCode.L))
             {
@@ -73,7 +73,7 @@ public class New_Char_Move : MonoBehaviour
                 horizontalMov = 0 * velocityMov;
             }
 
-            if (Input.GetKey(KeyCode.I))
+            if (Input.GetKeyDown(KeyCode.I))
             {
                 jumpComponent.shouldJump = true;
             }
