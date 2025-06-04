@@ -5,11 +5,11 @@ using UnityEngine.UIElements;
 
 public class MapImageInteract : MonoBehaviour
 {
-    private UnityEngine.UI.Image image;
+    private UnityEngine.UI.RawImage image;
     // Start is called before the first frame update
     void Start()
     {
-        image = GetComponent<UnityEngine.UI.Image>();
+        image = GetComponent<UnityEngine.UI.RawImage>();
         image.enabled = false;
     }
 
