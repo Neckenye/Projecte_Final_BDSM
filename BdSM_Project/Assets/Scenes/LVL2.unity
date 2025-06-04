@@ -14314,8 +14314,8 @@ Tilemap:
   - first: {x: 1, y: 5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
+      m_TileIndex: 0
+      m_TileSpriteIndex: 0
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -27763,13 +27763,13 @@ Tilemap:
       m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 7d149d51d0b256e41bfac7114fc1d910, type: 2}
   - m_RefCount: 28
     m_Data: {fileID: 11400000, guid: 42e4b8bd1fd001e418c8c43f1c767d76, type: 2}
   - m_RefCount: 15
     m_Data: {fileID: 11400000, guid: 2a405f3d79b6e6d47a7685ca3bfef3ba, type: 2}
-  - m_RefCount: 16
+  - m_RefCount: 15
     m_Data: {fileID: 11400000, guid: cada8ff6cff204641aced4e37baadaa8, type: 2}
   - m_RefCount: 13
     m_Data: {fileID: 11400000, guid: af53d2114bb98aa45a2e363883c813d0, type: 2}
@@ -27790,13 +27790,13 @@ Tilemap:
   - m_RefCount: 71
     m_Data: {fileID: 11400000, guid: 0ba4ebdfba2dba840a1152668edbb533, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 457730850, guid: 2a381b2a9ee2cb74ba9cbf9a185e0e29, type: 3}
   - m_RefCount: 28
     m_Data: {fileID: -368443631, guid: 6bf1db7af81151348b2c16276e6f9ff4, type: 3}
   - m_RefCount: 15
     m_Data: {fileID: 133030060, guid: 6bf1db7af81151348b2c16276e6f9ff4, type: 3}
-  - m_RefCount: 16
+  - m_RefCount: 15
     m_Data: {fileID: 1854413188, guid: 6bf1db7af81151348b2c16276e6f9ff4, type: 3}
   - m_RefCount: 13
     m_Data: {fileID: -153597803, guid: 6bf1db7af81151348b2c16276e6f9ff4, type: 3}
@@ -28158,6 +28158,10 @@ PrefabInstance:
     - target: {fileID: 318471626319690324, guid: 5e8e67e662cdd5a45a69d9f06409f79d, type: 3}
       propertyPath: m_Name
       value: Character_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 572596146511614947, guid: 5e8e67e662cdd5a45a69d9f06409f79d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 572596146511614947, guid: 5e8e67e662cdd5a45a69d9f06409f79d, type: 3}
       propertyPath: m_Offset.y
