@@ -10,6 +10,7 @@ TagManager:
   - KetchupTurret
   - Floor
   - Spike
+  - Character2
   layers:
   - Default
   - TransparentFX
