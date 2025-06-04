@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 318471626319690324, guid: 5e8e67e662cdd5a45a69d9f06409f79d, type: 3}
       propertyPath: m_TagString
-      value: Character
+      value: Character2
       objectReference: {fileID: 0}
     - target: {fileID: 572596146511614947, guid: 5e8e67e662cdd5a45a69d9f06409f79d, type: 3}
       propertyPath: m_Size.x
