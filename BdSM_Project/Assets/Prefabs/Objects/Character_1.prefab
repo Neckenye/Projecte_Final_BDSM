@@ -280,6 +280,7 @@ MonoBehaviour:
   velocityMov: 750
   softMov: 0.2
   characterSize: 0
+  selectedSchema: 0
 --- !u!114 &8127779151924956018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,8 +294,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _desireDirection: {x: 0, y: 0}
-  salto: 23
+  salto: 10
   grounded: 1
+  shouldJump: 0
 --- !u!114 &6513489561857138583
 MonoBehaviour:
   m_ObjectHideFlags: 0
