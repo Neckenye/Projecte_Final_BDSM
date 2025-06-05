@@ -32,7 +32,7 @@ public class ChangeScene : MonoBehaviour
     }
     private void Update()
     {
-        if (thislevel != 0 && thislevel != lastScene)
+        if (thislevel != 0 && thislevel != 1 && thislevel != lastScene)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -43,6 +43,11 @@ public class ChangeScene : MonoBehaviour
     public void AdvanceLevel()
     {
         LoadLevel(1);
+    }
+
+    public void AdvanceCustomLevel(int level)
+    {
+        LoadLevel(level);
     }
 
     public void ReturnMainMenu()
