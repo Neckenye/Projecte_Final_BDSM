@@ -13,19 +13,40 @@ EditorBuildSettings:
     guid: ca98ce5d1090b8b469edf57975e7662c
   - enabled: 1
     path: Assets/Scenes/LVL1.unity
-    guid: 7f5309cfc566c10479daa271bb93c0a6
+    guid: 688deb41f0e973145a5e1684342535c7
   - enabled: 1
     path: Assets/Scenes/LVL2.unity
-    guid: cb064bf0170fc8e47b9ec582290d450c
+    guid: 8c23dffe7f6a8464ba55e4ba84eeea25
   - enabled: 1
     path: Assets/Scenes/LVL3.unity
-    guid: c78e43da1a63b8145a21707a6b701042
-  - enabled: 1
-    path: Assets/Scenes/LVL5.unity
-    guid: 5b925df97a6a2ff43b0a9cf5ea152bdf
+    guid: 5c9c60647f04ed34fb6d60751bddd33a
   - enabled: 1
     path: Assets/Scenes/LVL4.unity
+    guid: 7f5309cfc566c10479daa271bb93c0a6
+  - enabled: 1
+    path: Assets/Scenes/LVL5.unity
+    guid: 6dcf3c8c011364c4aae12465e1ed1d0d
+  - enabled: 1
+    path: Assets/Scenes/LVL6.unity
+    guid: fb2dfad7e210a804fb763da9e2618378
+  - enabled: 1
+    path: Assets/Scenes/LVL7.unity
+    guid: cb064bf0170fc8e47b9ec582290d450c
+  - enabled: 1
+    path: Assets/Scenes/LVL8.unity
+    guid: fb75136a7f688db498650f187f48e525
+  - enabled: 1
+    path: Assets/Scenes/LVL9.unity
+    guid: 489c76ccf1b1630499392d1d36ef8eee
+  - enabled: 1
+    path: Assets/Scenes/LVL10.unity
+    guid: c78e43da1a63b8145a21707a6b701042
+  - enabled: 1
+    path: Assets/Scenes/LVL11.unity
     guid: 94ca6b9bbc0e8624bb7dd408785ea6e5
+  - enabled: 1
+    path: Assets/Scenes/LVL12.unity
+    guid: 5b925df97a6a2ff43b0a9cf5ea152bdf
   - enabled: 1
     path: Assets/Scenes/FinishScreen.unity
     guid: de3721121ecbc134faa590ee02a0442d
