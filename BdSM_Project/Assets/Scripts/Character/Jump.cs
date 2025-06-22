@@ -12,7 +12,6 @@ public class Char_Jump : MonoBehaviour
     public bool grounded = false;
     public bool shouldJump = false;
 
-    // Start is called before the first frame update
     void Start()
     {
         _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();

@@ -16,7 +16,7 @@ public class New_Char_Move : MonoBehaviour
     private float horizontalMov;
     [SerializeField] private float velocityMov;
     [Range(0f, 1f)][SerializeField] private float softMov;
-    private Vector3 speed = Vector3.zero;
+    private Vector3 velocity = Vector3.zero;
     [SerializeField] private float characterSize;
     private bool lookingRight = true;
     [SerializeField] InputSchema selectedSchema;
@@ -85,7 +85,7 @@ public class New_Char_Move : MonoBehaviour
     private void Move(float move)
     {
         Vector3 velocidadObjetivo = new Vector2(move, rb.velocity.y);
-        rb.velocity = Vector3.SmoothDamp(rb.velocity, velocidadObjetivo, ref speed, softMov);
+        rb.velocity = Vector3.SmoothDamp(rb.velocity, velocidadObjetivo, ref velocity, softMov);
 
         if ((move < 0 && !lookingRight) || (move > 0 && lookingRight))
         {
