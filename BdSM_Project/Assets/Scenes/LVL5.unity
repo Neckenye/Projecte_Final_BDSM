@@ -642,7 +642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioMenu: {fileID: 1691620301}
-  TemaMenu: {fileID: 8300000, guid: cea100c05f223bc4dafe6eed162fb7ef, type: 3}
+  SongMenu: {fileID: 8300000, guid: cea100c05f223bc4dafe6eed162fb7ef, type: 3}
 --- !u!4 &634473033
 Transform:
   m_ObjectHideFlags: 0
@@ -16343,7 +16343,7 @@ GameObject:
   - component: {fileID: 1691620302}
   - component: {fileID: 1691620301}
   m_Layer: 0
-  m_Name: Musica Joc
+  m_Name: GameMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16938,7 +16938,6 @@ SceneRoots:
   - {fileID: 729318446}
   - {fileID: 1450000487}
   - {fileID: 1834330977}
-  - {fileID: 634473033}
   - {fileID: 2082442959}
   - {fileID: 340941767}
   - {fileID: 3642835099916288122}
@@ -16948,3 +16947,4 @@ SceneRoots:
   - {fileID: 151728381}
   - {fileID: 1637677072}
   - {fileID: 453931652}
+  - {fileID: 634473033}
