@@ -1,8 +1,8 @@
-
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class AudioManager : MonoBehaviour
+public class MusicStateMachine : MonoBehaviour
 {
     public enum State
     {
@@ -10,53 +10,36 @@ public class AudioManager : MonoBehaviour
         ChillSong,
         FastSong
     }
+
     private State currentState;
     float dt = Time.deltaTime;
-    int stateIndex;
-
-    [SerializeField] AudioSource AudioSource;
-    [SerializeField] AudioClip PlayingSong;
-
     // Start is called before the first frame update
     void Start()
     {
         currentState = State.MenuSong;
-        AudioSource.clip = PlayingSong;
     }
 
     // Update is called once per frame
     void Update()
     {
-        stateIndex = SceneManager.GetActiveScene().buildIndex;
-
         switch (currentState)
         {
             case State.MenuSong:
                 {
+                    MenuSong(dt);
                     break;
                 }
             case State.ChillSong:
                 {
+                    ChillSong(dt);
                     break;
                 }
             case State.FastSong:
                 {
+                    FastSong(dt);
                     break;
                 }
             default: break;
-        }
-
-        if (currentState != State.ChillSong && (stateIndex >= 3 && stateIndex <= 8)) // index 3-8
-        {
-            ChangeState(State.ChillSong);
-        }
-        else if (currentState != State.FastSong && (stateIndex >= 9 && stateIndex <= 14)) // index 9-14
-        {
-            ChangeState(State.FastSong);
-        }
-        else if (currentState != State.MenuSong && (stateIndex >= 1 && stateIndex <= 2) || stateIndex > 14) // index 1-2 || 14<
-        {
-            ChangeState(State.MenuSong);
         }
     }
 
@@ -64,32 +47,45 @@ public class AudioManager : MonoBehaviour
     {
         if (currentState == State.MenuSong)
         {
-
+            MenuSong(dt);
         }
         else if (currentState == State.ChillSong)
         {
-
+            ChillSong(dt);
         }
         else if (currentState == State.FastSong)
         {
-
+            FastSong(dt);
         }
 
 
 
         if (newState == State.MenuSong)
         {
-            AudioSource.Play();
+
         }
         else if (newState == State.ChillSong)
         {
-            AudioSource.Play();
+
         }
         else if (newState == State.FastSong)
         {
-            AudioSource.Play();
+
         }
 
+
+    }
+
+    private void MenuSong(float dt)
+    {
+
+    }
+    private void ChillSong(float dt)
+    {
+
+    }
+    private void FastSong(float dt)
+    {
 
     }
 }

@@ -10,12 +10,12 @@ public class Turret_Shoot : MonoBehaviour
     [SerializeField] private float ShootAfter;
     [SerializeField] private float projectileDirectionX;
     [SerializeField] private float projectileDirectionY;
-    private float timeBetweenShootsCopy;
+    private float timeBetweenShootsPlusShootAfter;
 
     // Start is called before the first frame update
     void Start()
     {
-        timeBetweenShootsCopy = timeBetweenShoots + ShootAfter;
+        timeBetweenShootsPlusShootAfter = timeBetweenShoots + ShootAfter;
     }
 
     // Update is called once per frame
@@ -23,14 +23,14 @@ public class Turret_Shoot : MonoBehaviour
     {
         if (Timer.startTime)
         {
-            timeBetweenShootsCopy -= Time.deltaTime;
-            if (timeBetweenShootsCopy <= 0)
+            timeBetweenShootsPlusShootAfter -= Time.deltaTime;
+            if (timeBetweenShootsPlusShootAfter <= 0)
             {
                 GameObject projectile = Instantiate(projectilePrefab, transform.position, transform.rotation);
                 Projectile component = projectile.GetComponent<Projectile>();
                 component._desireDirection.y = projectileDirectionY;
                 component._desireDirection.x = projectileDirectionX;
-                timeBetweenShootsCopy = timeBetweenShoots;
+                timeBetweenShootsPlusShootAfter = timeBetweenShoots;
             }
         }
     }

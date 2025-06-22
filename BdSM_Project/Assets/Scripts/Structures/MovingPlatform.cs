@@ -6,8 +6,8 @@ public class Structures : MonoBehaviour
 {
     [SerializeField] private Transform[] wayPoints;
     [SerializeField] private float velocity;
-    private int nextPlatform = 1;
-    private bool platformOrder = true;
+    private int targetWaypointIndex = 1;
+    private bool readFromFirstToLast = true;  // If true: reads form 0 to last (so every time it changes target, index += 1). If false: Reads from last to 0 (so every time it changes target, index -= 1)
 
     void Start()
     {
@@ -18,29 +18,29 @@ public class Structures : MonoBehaviour
     {
         if (Timer.startTime)
         {
-            if (platformOrder && nextPlatform + 1 >= wayPoints.Length)
+            if (readFromFirstToLast && targetWaypointIndex + 1 >= wayPoints.Length)
             {
-                platformOrder = false;
+                readFromFirstToLast = false;
             }
 
-            if (!platformOrder && nextPlatform <= 0)
+            if (!readFromFirstToLast && targetWaypointIndex <= 0)
             {
-                platformOrder = true;
+                readFromFirstToLast = true;
             }
 
-            if (Vector2.Distance(transform.position, wayPoints[nextPlatform].position) < 0.1f)
+            if (Vector2.Distance(transform.position, wayPoints[targetWaypointIndex].position) < 0.1f)
             {
-                if (platformOrder)
+                if (readFromFirstToLast)
                 {
-                    nextPlatform += 1;
+                    targetWaypointIndex += 1;
                 }
                 else
                 {
-                    nextPlatform -= 1;
+                    targetWaypointIndex -= 1;
                 }
             }
 
-            transform.position = Vector2.MoveTowards(transform.position, wayPoints[nextPlatform].position, velocity * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, wayPoints[targetWaypointIndex].position, velocity * Time.deltaTime);
         }
     }
 
@@ -52,8 +52,6 @@ public class Structures : MonoBehaviour
             collision.transform.SetParent(transform);
         }
     }
-        
-    
 
     public void OnCollisionExit2D(Collision2D collision)
     {

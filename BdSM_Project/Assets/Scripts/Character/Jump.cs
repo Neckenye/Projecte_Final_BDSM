@@ -8,7 +8,7 @@ public class Char_Jump : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
 
     public Vector2 _desireDirection = Vector2.zero;
-    public float salto = 100;
+    public float jump = 100;
     public bool grounded = false;
     public bool shouldJump = false;
 
@@ -36,7 +36,7 @@ public class Char_Jump : MonoBehaviour
     {
         if (shouldJump && grounded)
         {
-            _rigidbody2D.AddForce(Vector2.up * salto, ForceMode2D.Impulse);
+            _rigidbody2D.AddForce(Vector2.up * jump, ForceMode2D.Impulse);
         }
         shouldJump = false;
     }
