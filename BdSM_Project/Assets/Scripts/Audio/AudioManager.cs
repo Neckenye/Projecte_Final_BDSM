@@ -1,15 +1,39 @@
-
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] AudioSource AudioMenu;
-    [SerializeField] AudioClip SongMenu;
+    public static AudioManager Instance;
 
-    private void Start()
+    public AudioSource AudioSource;
+
+    public AudioClip MenuSong;
+    public AudioClip ChillSong;
+    public AudioClip FastSong;
+
+    private void Awake()
     {
-        AudioMenu.clip = SongMenu;
-        AudioMenu.Play();
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
 
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        PlaySong(MenuSong);
+    }
+
+
+    public void PlaySong(AudioClip clip)
+    {
+        AudioSource.clip = clip;
+        AudioSource.Play();
     }
 }
+

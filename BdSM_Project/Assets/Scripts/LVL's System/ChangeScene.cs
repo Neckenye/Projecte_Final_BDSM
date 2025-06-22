@@ -10,6 +10,7 @@ public class ChangeScene : MonoBehaviour
     public bool isLoading = false;
     public static ChangeScene instance { get; private set; }
 
+    int sceneIndex;
     int thislevel;
     int lastScene;
 
@@ -39,6 +40,21 @@ public class ChangeScene : MonoBehaviour
                 ResetLevel();
             }
         }
+
+        sceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+        if ((sceneIndex >= 3 && sceneIndex <= 7) && AudioManager.Instance.AudioSource.clip != AudioManager.Instance.ChillSong)
+        {
+            AudioManager.Instance.PlaySong(AudioManager.Instance.ChillSong);
+        }
+        if ((sceneIndex >= 8 && sceneIndex <= 14) && AudioManager.Instance.AudioSource.clip != AudioManager.Instance.FastSong)
+        {
+            AudioManager.Instance.PlaySong(AudioManager.Instance.FastSong);
+        }
+        if (sceneIndex >= 15)
+        {
+            AudioManager.Instance.PlaySong(AudioManager.Instance.MenuSong);
+        }
     }
     public void AdvanceLevel()
     {
@@ -48,6 +64,8 @@ public class ChangeScene : MonoBehaviour
     public void AdvanceCustomLevel(int level)
     {
         LoadLevel(level);
+        Debug.Log(AudioManager.Instance.AudioSource.clip);
+        Debug.Log(level);
     }
 
     public void ReturnMainMenu()
