@@ -543,7 +543,7 @@ GameObject:
   - component: {fileID: 938373822}
   - component: {fileID: 938373821}
   m_Layer: 0
-  m_Name: Musica Joc
+  m_Name: GameMusic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15543,7 +15543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioMenu: {fileID: 938373821}
-  TemaMenu: {fileID: 8300000, guid: cea100c05f223bc4dafe6eed162fb7ef, type: 3}
+  SongMenu: {fileID: 8300000, guid: cea100c05f223bc4dafe6eed162fb7ef, type: 3}
 --- !u!4 &1236071642
 Transform:
   m_ObjectHideFlags: 0

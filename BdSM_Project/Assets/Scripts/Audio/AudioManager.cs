@@ -4,11 +4,11 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] AudioSource AudioMenu;
-    [SerializeField] AudioClip TemaMenu;
+    [SerializeField] AudioClip SongMenu;
 
     private void Start()
     {
-        AudioMenu.clip = TemaMenu;
+        AudioMenu.clip = SongMenu;
         AudioMenu.Play();
 
     }
