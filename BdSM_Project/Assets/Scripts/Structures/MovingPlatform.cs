@@ -16,29 +16,32 @@ public class Structures : MonoBehaviour
 
     private void Update()
     {
-        if (platformOrder && nextPlatform + 1 >= wayPoints.Length)
+        if (Timer.startTime)
         {
-            platformOrder = false;
-        }
-
-        if (!platformOrder && nextPlatform <= 0)
-        {
-            platformOrder = true;
-        }
-
-        if (Vector2.Distance(transform.position, wayPoints[nextPlatform].position) < 0.1f)
-        {
-            if (platformOrder)
+            if (platformOrder && nextPlatform + 1 >= wayPoints.Length)
             {
-                nextPlatform += 1;
+                platformOrder = false;
             }
-            else
-            {
-                nextPlatform -= 1;
-            }
-        }
 
-        transform.position = Vector2.MoveTowards(transform.position, wayPoints[nextPlatform].position, velocity * Time.deltaTime);
+            if (!platformOrder && nextPlatform <= 0)
+            {
+                platformOrder = true;
+            }
+
+            if (Vector2.Distance(transform.position, wayPoints[nextPlatform].position) < 0.1f)
+            {
+                if (platformOrder)
+                {
+                    nextPlatform += 1;
+                }
+                else
+                {
+                    nextPlatform -= 1;
+                }
+            }
+
+            transform.position = Vector2.MoveTowards(transform.position, wayPoints[nextPlatform].position, velocity * Time.deltaTime);
+        }
     }
 
     public void OnCollisionEnter2D(Collision2D collision)
@@ -49,6 +52,8 @@ public class Structures : MonoBehaviour
             collision.transform.SetParent(transform);
         }
     }
+        
+    
 
     public void OnCollisionExit2D(Collision2D collision)
     {
