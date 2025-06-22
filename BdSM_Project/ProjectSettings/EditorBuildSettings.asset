@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinishScreen.unity
     guid: de3721121ecbc134faa590ee02a0442d
+  - enabled: 1
+    path: Assets/Scenes/ControlsScene.unity
+    guid: 5b145c0b0f47f094cabd8d45e87f1efa
   m_configObjects: {}
