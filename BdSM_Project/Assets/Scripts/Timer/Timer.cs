@@ -21,6 +21,11 @@ public class Timer : MonoBehaviour
     {
         startTime = false;
 
+        if (GameDifficulty.easyMode)
+        {
+            initialTime = initialTime * 3;
+        }
+
         myTime = initialTime;
 
         sliderOne.maxValue = initialTime;

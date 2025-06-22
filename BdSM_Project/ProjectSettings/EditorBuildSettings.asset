@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: 6e79ad7bfe1996a42827708303c6eefb
   - enabled: 1
+    path: Assets/Scenes/DifuciltyScreen.unity
+    guid: 03971e7427cdec34da7fd740970231b3
+  - enabled: 1
     path: Assets/Scenes/LevelSelector.unity
     guid: ca98ce5d1090b8b469edf57975e7662c
   - enabled: 1
@@ -19,13 +22,13 @@ EditorBuildSettings:
     guid: 8c23dffe7f6a8464ba55e4ba84eeea25
   - enabled: 1
     path: Assets/Scenes/LVL3.unity
-    guid: 5c9c60647f04ed34fb6d60751bddd33a
+    guid: 9a5c209a83b33e94c82a66e0489d2410
   - enabled: 1
     path: Assets/Scenes/LVL4.unity
     guid: 7f5309cfc566c10479daa271bb93c0a6
   - enabled: 1
     path: Assets/Scenes/LVL5.unity
-    guid: 6dcf3c8c011364c4aae12465e1ed1d0d
+    guid: 26b40c9c493c78d40a752d66080034a1
   - enabled: 1
     path: Assets/Scenes/LVL6.unity
     guid: fb2dfad7e210a804fb763da9e2618378
