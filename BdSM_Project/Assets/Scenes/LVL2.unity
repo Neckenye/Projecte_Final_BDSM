@@ -490,7 +490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioMenu: {fileID: 1603828069}
-  TemaMenu: {fileID: 8300000, guid: 8f26d705744c8b74d8334aa892f27b24, type: 3}
+  TemaMenu: {fileID: 8300000, guid: cea100c05f223bc4dafe6eed162fb7ef, type: 3}
 --- !u!4 &199833364
 Transform:
   m_ObjectHideFlags: 0
