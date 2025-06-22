@@ -5,17 +5,14 @@ using UnityEngine;
 public class LVL9_Camera : MonoBehaviour
 {
     [SerializeField] private Transform[] wayPoints;
-    [SerializeField] private float velocity;
+    [SerializeField] private float speed;
     private int nextPlatform = 1;
     private bool platformOrder = true;
 
-    // Start is called before the first frame update
     void Start()
     {
         
     }
-
-    // Update is called once per frame
     void Update()
     {
         if (platformOrder && nextPlatform + 1 >= wayPoints.Length)
@@ -40,7 +37,7 @@ public class LVL9_Camera : MonoBehaviour
             }
         }
 
-        transform.position = Vector2.MoveTowards(transform.position, wayPoints[nextPlatform].position, velocity * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, wayPoints[nextPlatform].position, speed * Time.deltaTime);
         transform.position -= new Vector3(0,0,10);
     }
 }

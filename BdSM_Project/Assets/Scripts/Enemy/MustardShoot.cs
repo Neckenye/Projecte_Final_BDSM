@@ -11,7 +11,6 @@ public class Turret_Shoot : MonoBehaviour
     [SerializeField] private float projectileDirectionX;
     [SerializeField] private float projectileDirectionY;
     private float timeBetweenShootsCopy;
-
     // Start is called before the first frame update
     void Start()
     {

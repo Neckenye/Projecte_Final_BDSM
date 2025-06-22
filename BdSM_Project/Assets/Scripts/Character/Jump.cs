@@ -8,7 +8,7 @@ public class Char_Jump : MonoBehaviour
     private Rigidbody2D _rigidbody2D;
 
     public Vector2 _desireDirection = Vector2.zero;
-    public float salto = 100;
+    public float jump = 100;
     public bool grounded = false;
     public bool shouldJump = false;
 
@@ -18,14 +18,12 @@ public class Char_Jump : MonoBehaviour
         _rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
     }
 
-    //The grounded bool is true if the event is the Ground Hit.
     public void GroundHitCallBack()
     {
         Debug.Log($"{gameObject.name} changed state: grounded");
         grounded = true;
     }
 
-    //The grounded bool is false if the event is the Ground NO Hit.
     public void GroundNoHitCallBack()
     {
         Debug.Log($"{gameObject.name} changed state: airborne");
@@ -36,7 +34,7 @@ public class Char_Jump : MonoBehaviour
     {
         if (shouldJump && grounded)
         {
-            _rigidbody2D.AddForce(Vector2.up * salto, ForceMode2D.Impulse);
+            _rigidbody2D.AddForce(Vector2.up * jump, ForceMode2D.Impulse);
         }
         shouldJump = false;
     }

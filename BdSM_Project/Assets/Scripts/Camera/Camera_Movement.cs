@@ -9,13 +9,12 @@ public class Camera_Movement : MonoBehaviour
     public Vector2 followOffset;
     [SerializeField] public float speed;
     private Vector2 threshold;
-    // Start is called before the first frame update
+
     void Start()
     {
         threshold = CalculateTreshold();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         Vector2 follow = followObject.transform.position;
