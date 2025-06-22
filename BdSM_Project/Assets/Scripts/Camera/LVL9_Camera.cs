@@ -18,29 +18,32 @@ public class LVL9_Camera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (platformOrder && nextPlatform + 1 >= wayPoints.Length)
+        if(Timer.startTime)
         {
-            platformOrder = false;
-        }
-
-        if (!platformOrder && nextPlatform <= 0)
-        {
-            platformOrder = true;
-        }
-
-        if (Vector2.Distance(transform.position, wayPoints[nextPlatform].position) < 0.1f)
-        {
-            if (platformOrder)
+            if (platformOrder && nextPlatform + 1 >= wayPoints.Length)
             {
-                nextPlatform += 1;
+                platformOrder = false;
             }
-            else
-            {
-                nextPlatform -= 1;
-            }
-        }
 
-        transform.position = Vector2.MoveTowards(transform.position, wayPoints[nextPlatform].position, velocity * Time.deltaTime);
-        transform.position -= new Vector3(0,0,10);
+            if (!platformOrder && nextPlatform <= 0)
+            {
+                platformOrder = true;
+            }
+
+            if (Vector2.Distance(transform.position, wayPoints[nextPlatform].position) < 0.1f)
+            {
+                if (platformOrder)
+                {
+                    nextPlatform += 1;
+                }
+                else
+                {
+                    nextPlatform -= 1;
+                }
+            }
+
+            transform.position = Vector2.MoveTowards(transform.position, wayPoints[nextPlatform].position, velocity * Time.deltaTime);
+            transform.position -= new Vector3(0, 0, 10);
+        }
     }
 }
