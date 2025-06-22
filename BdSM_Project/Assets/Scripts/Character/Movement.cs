@@ -5,6 +5,12 @@ using UnityEngine.UIElements;
 
 public class New_Char_Move : MonoBehaviour
 {
+    enum InputSchema
+    {
+        WASD,
+        IJKL
+    };
+
     private Rigidbody2D rb;
 
     private float horizontalMov;
@@ -13,17 +19,22 @@ public class New_Char_Move : MonoBehaviour
     private Vector3 velocity = Vector3.zero;
     [SerializeField] private float characterSize;
     private bool lookingRight = true;
+    [SerializeField] InputSchema selectedSchema;
+    Char_Jump jumpComponent;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        Debug.Assert(rb != null);
+        jumpComponent = GetComponent<Char_Jump>();
+        Debug.Assert(jumpComponent != null);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.CompareTag("Character"))
+        if (selectedSchema == InputSchema.WASD)
         {
             if (Input.GetKey(KeyCode.D))
             {
@@ -35,12 +46,17 @@ public class New_Char_Move : MonoBehaviour
                 horizontalMov = -1 * velocityMov;
                
             }
-            else
+            else 
             {
                 horizontalMov = 0 * velocityMov;
             }
+
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                jumpComponent.shouldJump = true;
+            }
         }
-        else
+        if (selectedSchema == InputSchema.IJKL)
         {
             if (Input.GetKey(KeyCode.L))
             {
@@ -56,7 +72,14 @@ public class New_Char_Move : MonoBehaviour
             {
                 horizontalMov = 0 * velocityMov;
             }
+
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                jumpComponent.shouldJump = true;
+            }
         }
+
+        
     }
     private void FixedUpdate()
     {

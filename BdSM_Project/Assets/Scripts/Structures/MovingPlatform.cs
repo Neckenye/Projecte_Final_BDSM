@@ -8,14 +8,12 @@ public class Structures : MonoBehaviour
     [SerializeField] private float velocity;
     private int nextPlatform = 1;
     private bool platformOrder = true;
-    // Start is called before the first frame update
 
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     private void Update()
     {
         if (platformOrder && nextPlatform + 1 >= wayPoints.Length)
@@ -45,14 +43,6 @@ public class Structures : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        //if (collision.gameObject.layer == 6)
-        //{
-        //    collision.transform.SetParent(transform);
-        //}
-        //if (collision.gameObject.layer == 7)
-        //{
-        //    collision.transform.SetParent(transform);
-        //}
 
         if (collision.gameObject.CompareTag("Character"))
         {
@@ -62,14 +52,6 @@ public class Structures : MonoBehaviour
 
     public void OnCollisionExit2D(Collision2D collision)
     {
-        //if (collision.gameObject.layer == 6)
-        //{
-        //    collision.transform.SetParent(null);
-        //}
-        //if (collision.gameObject.layer == 7)
-        //{
-        //    collision.transform.SetParent(null);
-        //}
 
         if (collision.gameObject.CompareTag("Character"))
         {
